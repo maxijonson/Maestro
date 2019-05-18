@@ -28,17 +28,17 @@ npm start
 
 Look for any `*.blank.*` file, remove that `.blank` part and edit the file to fill the configuration. 
 
-##### auth.json
+#### auth.json
 
 `LOCALTUNNEL_SUBDOMAIN`: The name of your localtunnel.me subdomain. You can set this to anything you like, no signup is required. Keep it secret, this is a public link and can let others make unauthorized requests. They can't send viruses or take control, but anything you can do with this server, they can too! 
 
-##### programs.ts
+#### programs.ts
 
 `programs`: A collection of programs that can be launched via the `START_APPLICATION` command. The key is the name of the program which would be supplied in the `data` field of the request. the `path` is the absolute path to the .exe or whatever you're trying to open. Just keep in mind that, behind the scenes, Node executes a `start` command just like you would in CMD.
 
 Note: keep the keys lowercase.
 
-##### config.ts
+#### config.ts
 
 `port`: define the port that is used for your server. This is also the port that localtunnel.me forwards to.
 
@@ -46,7 +46,7 @@ Note: keep the keys lowercase.
 
 Here's the list of commands I have created so far. However, nothing stops you from adding your own endpoints. Remember that it works like any API would: it receives a request at an address and performs an action.
 
-##### START_APPLICATION
+#### START_APPLICATION
 
 ###### POST /start
 
